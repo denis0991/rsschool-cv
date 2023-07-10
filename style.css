@@ -5,13 +5,13 @@
 
 #wrapper {
 	height: 100%;
-	width: 100vw;
+	width: 100%;
     margin: 0 auto;
 	background: linear-gradient(180deg, rgba(40, 103, 139, 0.71) 0%, rgba(18, 31, 66, 0.79) 93.75%);;
 }
 
 .wrapper {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -154,7 +154,7 @@ code {
 
 .right {
     order: 1;
-    width: 900px;
+    max-width: 900px;
     /* background-color: rgba(165, 165, 165, 0.35); */
 }
 
@@ -243,4 +243,27 @@ h2 {
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
+}
+
+.contacts ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 10px;
+}
+
+@media  (max-width: 1200px) {
+    .wrapper {
+        max-width: 1200px;
+    }
+    .code_examples {
+        background-color: black;
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .code_examples {
+        max-width: 600px;
+        
+    }
 }
