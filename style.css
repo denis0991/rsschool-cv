@@ -38,13 +38,11 @@
 .header_menu {
 	display: flex;
 	justify-content: center;
-    
 }
 
 .header_menu_item {
 	margin-right: 30px;
     list-style-type: none;
-    
 }
 
 .header_menu_item a {
@@ -160,7 +158,6 @@ code {
 
 .left {
     width: 300px;
-    
 }
 
 .skills li {
@@ -264,6 +261,5 @@ h2 {
 @media (max-width: 768px) {
     .code_examples {
         max-width: 600px;
-        
     }
 }
