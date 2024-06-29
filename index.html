@@ -32,38 +32,36 @@
         <section class="right">
           <div id="about" class="about">
             <h2>About Me</h2>
-            <p>Realizing that I had reached the highest level in my career, 
-              I decided to learn a new profession. I chose the most 
-              interesting direction and began to study front-end development.
-              The first time I studied on my own. At the moment I am a student 
-              of RS Shool.</p>
+            <p>Realizing that I had reached the highest level in my career, I decided to learn a new profession.
+              I chose the most interesting direction and started front-end development. Now I work on the Knowledge
+               Space platform, and in my free time I develop websites.</p>
           </div>
           <div class="code_examples">
             <h2>Code examples</h2>
             <code>
-  <span class="color-let">let</span> <span class="blue2">arr</span>  = <span style="color:#DCB962">[]</span>;
-  <span class="color-let">let</span> <span class="blue2">arr2</span> = <span style="color:#DCB962">[]</span>;
+  <span class="color-let">let</span> <span class="blue2">arrayFirst</span>  = <span style="color:#DCB962">[]</span>;
+  <span class="color-let">let</span> <span class="blue2">arraySecond</span> = <span style="color:#DCB962">[]</span>;
   <span class="color-let">let</span> <span class="blue2">str</span> = <span style="color:#CE723B">''</span>;
   <span class="color-let">let</span> <span class="blue2">sum1</span>;
   <span class="color-let">let</span> <span class="blue2">sum2</span>;
 
-  <span style="color: #2566CB;">function</span> <span style="color: #DCB962;">func() {</span>
+  <span style="color: #2566CB;">function</span> <span style="color: #DCB962;">findEqual() {</span>
   <span style="color: #B34CC5;">for (</span><span class="blue1">let</span> <span class="blue2">i</span> = <span class="green">0</span>; <span class="blue2">i</span> &lt;= <span class="green">999</span>; <span class="blue2">i</span>++<span class="violet">) {</span>
     <span style="color: #903D9E;">if</span> <span class="blue1">(</span><span class="blue2">i</span> &lt; <span class="green">10</span><span class="blue1">) {</span>
-    <span class="blue2">arr</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="green">0</span> + <span class="green">0</span> + <span class="blue2">i</span><span class="yellow">)</span>
+    <span class="blue2">arrayFirst</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="green">0</span> + <span class="green">0</span> + <span class="blue2">i</span><span class="yellow">)</span>
     <span class="blue1">}</span> <span style="color: #B34CC5;">else if</span> <span class="blue1">(</span><span class="blue2">i</span> >= <span class="green">10</span> && <span class="blue2">i</span> &lt; <span class="green">100</span><span class="blue1">) {</span>
-    <span class="blue2">arr</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="green">0</span> + <span class="blue2">i</span><span class="yellow">)</span>
+    <span class="blue2">arrayFirst</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="green">0</span> + <span class="blue2">i</span><span class="yellow">)</span>
     <span class="blue1">}</span> <span style="color: #B34CC5;">else if</span> <span class="blue1">(</span><span class="blue2">i</span> >= <span class="green">100</span><span class="blue1">) {</span>
-    <span class="blue2">arr</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="blue2">i</span><span class="yellow">)</span>
+    <span class="blue2">arrayFirst</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="blue2">i</span><span class="yellow">)</span>
   <span class="blue1">}</span><span class="violet">}</span>
   
-  <span style="color: #B34CC5;">for (</span><span class="blue1">let</span> <span class="blue2">i</span> = <span class="green">0</span>; <span class="blue2">i</span> &lt; <span class="blue2">arr.length</span>; <span class="blue2">i</span>++<span class="violet">) {</span>
-  <span style="color: #B34CC5;">for (</span><span class="blue1">let</span> <span class="blue2">j</span> = <span class="green">0</span>; <span class="blue2">j</span> &lt; <span class="blue2">arr.length</span>; <span class="blue2">j</span>++<span class="violet">)</span> {
-  <span class="blue2">sum1</span> = +<span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + +<span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + +<span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span>
-  <span class="blue2">sum2</span> = +<span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + +<span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + +<span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span>
+  <span style="color: #B34CC5;">for (</span><span class="blue1">let</span> <span class="blue2">i</span> = <span class="green">0</span>; <span class="blue2">i</span> &lt; <span class="blue2">arrayFirst.length</span>; <span class="blue2">i</span>++<span class="violet">) {</span>
+  <span style="color: #B34CC5;">for (</span><span class="blue1">let</span> <span class="blue2">j</span> = <span class="green">0</span>; <span class="blue2">j</span> &lt; <span class="blue2">arrayFirst.length</span>; <span class="blue2">j</span>++<span class="violet">)</span> {
+  <span class="blue2">sum1</span> = +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span>
+  <span class="blue2">sum2</span> = +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span>
   <span style="color: #B34CC5;">if</span> (<span class="blue2">sum1</span> === <span class="blue2">sum2</span>) {
-  <span class="blue2">arr2</span><span class="yellow">.push</span><span class="violet">(</span><span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + <span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + <span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span> + 
-  <span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + <span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + <span class="blue2">arr</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span><span class="violet">)</span>
+  <span class="blue2">arraySecond</span><span class="yellow">.push</span><span class="violet">(</span><span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + <span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + <span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span> + 
+  <span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + <span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + <span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span><span class="violet">)</span>
   <span class="yellow">}</span><span class="blue1">}</span><span class="violet">}</span><span class="yellow">}</span>
             </code>
           </div>
@@ -71,15 +69,27 @@
             <h2>Projects</h2>
             <div class="projects-container">
               <div class="projects-shelter">
-                <h3>Shelter</h3>
-                <a href="https://rolling-scopes-school.github.io/denis0991-JSFE2023Q1/shelter/index.html" target="_blank">
-                  <img src="assets/png/Снимокэкрана.png" alt="Shelter">
+                <h3>Coffe-house</h3>
+                <a href="https://rolling-scopes-school.github.io/denis0991-JSFE2023Q4/coffee-house/home/" target="blank">
+                  <img src="assets/img/Скриншот 29-06-2024 140829.jpg" alt="Shelter">
                 </a>
               </div>
               <div class="projects-cssbayan">
-                <h3>CSS Bayan</h3>
-                <a href="https://denis0991.github.io/cssBayan/">
-                  <img src="assets/png/cssbayan.png" alt="cssbayan">
+                <h3>Library</h3>
+                <a href="https://rolling-scopes-school.github.io/denis0991-JSFEPRESCHOOL2023Q2/library">
+                  <img src="assets/img/Скриншот 29-06-2024 140810.jpg" alt="cssbayan">
+                </a>
+              </div>
+              <div class="projects-cssbayan">
+                <h3>Image gallery</h3>
+                <a href="https://rolling-scopes-school.github.io/denis0991-JSFEPRESCHOOL2023Q2/image-gallery/">
+                  <img src="assets/img/Скриншот 29-06-2024 140839.jpg" alt="cssbayan">
+                </a>
+              </div>
+              <div class="projects-cssbayan">
+                <h3>Audio player</h3>
+                <a href="https://rolling-scopes-school.github.io/denis0991-JSFEPRESCHOOL2023Q2/audio-player/">
+                  <img src="assets/img/Скриншот 29-06-2024 140847.jpg" alt="cssbayan">
                 </a>
               </div>
             </div>
@@ -92,11 +102,12 @@
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
-              <li>Git</li>
+              <li>Git/Github</li>
               <li>Figma</li>
+              <li>Wordpress</li>
+              <li>SQL</li>
             </ul>
           </div>
-          
           <div class="education">
             <h2>Education</h2>
             <ul>
@@ -139,9 +150,6 @@
               </a>
             </li>
             </ul>
-            
-            
-            
           </div>
         </section>
       </main>
@@ -160,15 +168,12 @@
           <div class="github">
             <a href="https://github.com/denis0991" target="_blank"><img class="git-icon" src="assets/png/github_git_icon_145985.png" alt="github"></a>
           </div>
-          
           <div class="logo">
             <a href="https://rs.school/js-stage0/" target="_blank">
               <img src="assets/svg/rs_school_js.svg" alt="logo">
             </a>
           </div>
-         
         </div>
-      
         <div class="year">
           <p>2023</p>
         </div>
