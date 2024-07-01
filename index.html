@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Minesweeper</title>
+  <title>CV</title>
 </head>
 <body>
   <div id="wrapper">
@@ -44,17 +44,15 @@
   <span class="color-let">let</span> <span class="blue2">str</span> = <span style="color:#CE723B">''</span>;
   <span class="color-let">let</span> <span class="blue2">sum1</span>;
   <span class="color-let">let</span> <span class="blue2">sum2</span>;
-
   <span style="color: #2566CB;">function</span> <span style="color: #DCB962;">findEqual() {</span>
   <span style="color: #B34CC5;">for (</span><span class="blue1">let</span> <span class="blue2">i</span> = <span class="green">0</span>; <span class="blue2">i</span> &lt;= <span class="green">999</span>; <span class="blue2">i</span>++<span class="violet">) {</span>
     <span style="color: #903D9E;">if</span> <span class="blue1">(</span><span class="blue2">i</span> &lt; <span class="green">10</span><span class="blue1">) {</span>
     <span class="blue2">arrayFirst</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="green">0</span> + <span class="green">0</span> + <span class="blue2">i</span><span class="yellow">)</span>
-    <span class="blue1">}</span> <span style="color: #B34CC5;">else if</span> <span class="blue1">(</span><span class="blue2">i</span> >= <span class="green">10</span> && <span class="blue2">i</span> &lt; <span class="green">100</span><span class="blue1">) {</span>
+    <span class="blue1">}</span> <span style="color: #B34CC5;">else if</span> <span class="blue1">(</span><span class="blue2">i</span> >= <span class="green">10</span> &amp;&amp; <span class="blue2">i</span> &lt; <span class="green">100</span><span class="blue1">) {</span>
     <span class="blue2">arrayFirst</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="green">0</span> + <span class="blue2">i</span><span class="yellow">)</span>
     <span class="blue1">}</span> <span style="color: #B34CC5;">else if</span> <span class="blue1">(</span><span class="blue2">i</span> >= <span class="green">100</span><span class="blue1">) {</span>
     <span class="blue2">arrayFirst</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="blue2">i</span><span class="yellow">)</span>
   <span class="blue1">}</span><span class="violet">}</span>
-  
   <span style="color: #B34CC5;">for (</span><span class="blue1">let</span> <span class="blue2">i</span> = <span class="green">0</span>; <span class="blue2">i</span> &lt; <span class="blue2">arrayFirst.length</span>; <span class="blue2">i</span>++<span class="violet">) {</span>
   <span style="color: #B34CC5;">for (</span><span class="blue1">let</span> <span class="blue2">j</span> = <span class="green">0</span>; <span class="blue2">j</span> &lt; <span class="blue2">arrayFirst.length</span>; <span class="blue2">j</span>++<span class="violet">)</span> {
   <span class="blue2">sum1</span> = +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span>
@@ -180,6 +178,5 @@
       </footer>
     </div>
   </div>
-
 </body>
 </html>
