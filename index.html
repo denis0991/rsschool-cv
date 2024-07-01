@@ -78,15 +78,15 @@
      num === 70 || num === 80 || num === 90 || num === 100 || num === 200 || num === 300 || num === 400 ||
       num === 500 || num === 600 || num === 700 || num === 800 || num === 900) {
       console.log(obj[num])
-    } if (num &gt; 20 && num.length == 2) {
+    } if (num &gt; 20 &amp;&amp; num.length == 2) {
       result += obj[num[0] + 0] + ' ' + (obj[num[1]] || '')
       result = result.slice(0, 1) + result.slice(1).toLowerCase()
       console.log(result)
-    } if (num.length == 3 && num[1] == 1) {
+    } if (num.length == 3 &amp;&amp; num[1] == 1) {
       result += obj[num[0] + 0 + 0] + ' ' + obj[num[1] + num[2]]
       result = result.slice(0, 1) + result.slice(1).toLowerCase()
       console.log(result)
-    } if (num.length == 3 && num[1] != 1) {
+    } if (num.length == 3 &amp;&amp; num[1] != 1) {
       result += obj[num[0] + 0 + 0] + ' ' + (obj[num[1] + 0] || '') + ' ' + (obj[num[2]] || '')
       result = result.slice(0, 1) + result.slice(1).toLowerCase()
       console.log(result)
