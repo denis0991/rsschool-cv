@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="wrapper">
+      <header class="header">
+        <div class="avatar">
+          <img class="photo" src="assets/img/h5d3N8y5wSQ.jpg" alt="photo">
+        </div>
+        <nav class="header_nav">
+          <ul class="header_menu">
+          <li class="header_menu_item"><a href="#contacts">Contacts</a></li>
+          <li class="header_menu_item"><a href="#about">About</a></li>
+          <li class="header_menu_item"><a href="#skills">Skills</a></li>
+          <li class="header_menu_item"><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+      <div class="header_icon">
+        <img src="assets/png/HTMLCSS.png" alt="">
+      </div>
+      <h1 class="heading">Denis Nasonov</h1>
+        <h2 class="subheading">Front-end developer</h2>
+      </header>
+      <main class="container">
+        <section class="right">
+          <div id="about" class="about">
+            <h2>About Me</h2>
+            <p>Realizing that I had reached the highest level in my career, I decided to learn a new profession.
+              I chose the most interesting direction and started front-end development. Now I work on the Knowledge
+               Space platform, and in my free time I develop websites.</p>
+
+          </div>
+          <div class="code_examples">
+            <h2>Code examples</h2>
+            <code>
+  <!-- <span class="color-let">let</span> <span class="blue2">arrayFirst</span>  = <span style="color:#DCB962">[]</span>;
+  <span class="color-let">let</span> <span class="blue2">arraySecond</span> = <span style="color:#DCB962">[]</span>;
+  <span class="color-let">let</span> <span class="blue2">str</span> = <span style="color:#CE723B">''</span>;
+  <span class="color-let">let</span> <span class="blue2">sum1</span>;
+  <span class="color-let">let</span> <span class="blue2">sum2</span>;
+  <span style="color: #2566CB;">function</span> <span style="color: #DCB962;">findEqual() {</span>
+  <span style="color: #B34CC5;">for (</span><span class="blue1">let</span> <span class="blue2">i</span> = <span class="green">0</span>; <span class="blue2">i</span> &lt;= <span class="green">999</span>; <span class="blue2">i</span>++<span class="violet">) {</span>
+    <span style="color: #903D9E;">if</span> <span class="blue1">(</span><span class="blue2">i</span> &lt; <span class="green">10</span><span class="blue1">) {</span>
+    <span class="blue2">arrayFirst</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="green">0</span> + <span class="green">0</span> + <span class="blue2">i</span><span class="yellow">)</span>
+    <span class="blue1">}</span> <span style="color: #B34CC5;">else if</span> <span class="blue1">(</span><span class="blue2">i</span> &gt;= <span class="green">10</span> &amp;&amp; <span class="blue2">i</span> &lt; <span class="green">100</span><span class="blue1">) {</span>
+    <span class="blue2">arrayFirst</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="green">0</span> + <span class="blue2">i</span><span class="yellow">)</span>
+    <span class="blue1">}</span> <span style="color: #B34CC5;">else if</span> <span class="blue1">(</span><span class="blue2">i</span> &gt;= <span class="green">100</span><span class="blue1">) {</span>
+    <span class="blue2">arrayFirst</span><span class="yellow">.push(</span><span class="blue2">str</span> + <span class="blue2">i</span><span class="yellow">)</span>
+  <span class="blue1">}</span><span class="violet">}</span>
+  <span style="color: #B34CC5;">for (</span><span class="blue1">let</span> <span class="blue2">i</span> = <span class="green">0</span>; <span class="blue2">i</span> &lt; <span class="blue2">arrayFirst.length</span>; <span class="blue2">i</span>++<span class="violet">) {</span>
+  <span style="color: #B34CC5;">for (</span><span class="blue1">let</span> <span class="blue2">j</span> = <span class="green">0</span>; <span class="blue2">j</span> &lt; <span class="blue2">arrayFirst.length</span>; <span class="blue2">j</span>++<span class="violet">)</span> {
+  <span class="blue2">sum1</span> = +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span>
+  <span class="blue2">sum2</span> = +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + +<span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span>
+  <span style="color: #B34CC5;">if</span> (<span class="blue2">sum1</span> === <span class="blue2">sum2</span>) {
+  <span class="blue2">arraySecond</span><span class="yellow">.push</span><span class="violet">(</span><span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + <span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + <span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">i</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span> +
+  <span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">0</span><span class="yellow">]</span> + <span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">1</span><span class="yellow">]</span> + <span class="blue2">arrayFirst</span><span class="yellow">[</span><span class="blue2">j</span><span class="yellow">]</span><span class="yellow">[</span><span class="green">2</span><span class="yellow">]</span><span class="violet">)</span>
+  <span class="yellow">}</span><span class="blue1">}</span><span class="violet">}</span><span class="yellow">}</span> -->
+  <span>
+    function func(num) {
+    num = String(num)
+
+    let obj = {
+      1: 'Один', 2: 'Два', 3:'Три', 4:'Четыре', 5:'Пять', 6:'Шесть', 7:'Семь', 8:'Восемь', 9:'Девять', 10:'Десять',
+       11:'Одиннадцать', 12:'Двенадцать', 13:'Тринадцать', 14:'Четырнадцать', 15:'Пятнадцать',
+        16:'Шестнадцать', 17:'Семнадцать', 18:'Восемнадцать', 19:'Девятнадцать', 20:'Дватцать', 30: 'Тридцать',
+         40: 'Сорок', 50: 'Пятьдесят', 60: 'Шестьдесят', 70: 'Семьдесят', 80: 'Восемьдесят', 90: 'Девяноста',
+          100: 'Сто', 200: 'Двести', 300: 'Триста',
+         400: 'Четыреста', 500: 'Пятьстот', 600: 'Шестьсот', 700: 'Семьсот', 800: 'Восемьсот', 900: 'Девятьсот',
+    }
+
+    let result = '';
+    if (num &gt; 0 &amp;&amp; num &lt;= 20 || num === 30 || num === 40 || num === 50 || num === 60 ||
+     num === 70 || num === 80 || num === 90 || num === 100 || num === 200 || num === 300 || num === 400 ||
+      num === 500 || num === 600 || num === 700 || num === 800 || num === 900) {
+      console.log(obj[num])
+    } if (num &gt; 20 &amp;&amp; num.length == 2) {
+      result += obj[num[0] + 0] + ' ' + (obj[num[1]] || '')
+      result = result.slice(0, 1) + result.slice(1).toLowerCase()
+      console.log(result)
+    } if (num.length == 3 &amp;&amp; num[1] == 1) {
+      result += obj[num[0] + 0 + 0] + ' ' + obj[num[1] + num[2]]
+      result = result.slice(0, 1) + result.slice(1).toLowerCase()
+      console.log(result)
+    } if (num.length == 3 &amp;&amp; num[1] != 1) {
+      result += obj[num[0] + 0 + 0] + ' ' + (obj[num[1] + 0] || '') + ' ' + (obj[num[2]] || '')
+      result = result.slice(0, 1) + result.slice(1).toLowerCase()
+      console.log(result)
+    }
+  }
+  </span>
+            </code>
+          </div>
+          <div id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+              <div class="projects-shelter">
+                <h3>Coffe-house</h3>
+                <a href="https://rolling-scopes-school.github.io/denis0991-JSFE2023Q4/coffee-house/home/" target="blank">
+                  <img src="assets/img/coffe-house.jpg" alt="Shelter">
+                </a>
+              </div>
+              <div class="projects-cssbayan">
+                <h3>Library</h3>
+                <a href="https://rolling-scopes-school.github.io/denis0991-JSFEPRESCHOOL2023Q2/library">
+                  <img src="assets/img/library.jpg" alt="cssbayan">
+                </a>
+              </div>
+              <div class="projects-cssbayan">
+                <h3>Image gallery</h3>
+                <a href="https://rolling-scopes-school.github.io/denis0991-JSFEPRESCHOOL2023Q2/image-gallery/">
+                  <img src="assets/img/player.jpg" alt="cssbayan">
+                </a>
+              </div>
+              <div class="projects-cssbayan">
+                <h3>Audio player</h3>
+                <a href="https://rolling-scopes-school.github.io/denis0991-JSFEPRESCHOOL2023Q2/audio-player/">
+                  <img src="assets/img/unsplash.jpg" alt="cssbayan">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="left">
+          <div id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git/Github</li>
+              <li>Figma</li>
+              <li>Wordpress</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="education">
+            <h2>Education</h2>
+            <ul>
+              <li>Orenburg State Agrarian Universit
+                <ul><li>Maintenance and repair of machines in the agro-industrial complex</li></ul>
+              </li>
+            </ul>
+            <ul>
+              <li>Self study
+                <ul>
+                  <li>Code Basics</li>
+                  <li>Textbook by Dmitry Trepachev</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="languages">
+            <h2>Languages</h2>
+            <ul>
+              <li>Russian - native speaker</li>
+              <li>English - A1</li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <h2>Contacts</h2>
+            <ul>
+              <li>
+                <a href="https://github.com/denis0991">
+                <img src="assets/png/github_git_icon_145985.png" alt="github">Github
+              </a>
+            </li>
+              <li>
+                <a href="https://vk.com/id21221373">
+                <img src="assets/png/vk.png" alt="vk">VK
+              </a>
+            </li>
+              <li>
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                <img src="assets/png/email.png" alt="email">Email
+              </a>
+            </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-container">
+          <div id="contacts" class="contacts">
+            <a href="https://vk.com/id21221373" target="_blank">
+              <img src="assets/png/vk.png" alt="vk">
+            </a>
+          </div>
+          <div class="email">
+            <a href="https://mail.google.com/mail/u/0/#inbox">
+              <img src="assets/png/email.png" alt="email">
+            </a>
+          </div>
+          <div class="github">
+            <a href="https://github.com/denis0991" target="_blank"><img class="git-icon" src="assets/png/github_git_icon_145985.png" alt="github"></a>
+          </div>
+          <div class="logo">
+            <a href="https://rs.school/js-stage0/" target="_blank">
+              <img src="assets/svg/rs_school_js.svg" alt="logo">
+            </a>
+          </div>
+        </div>
+        <div class="year">
+          <p>2023</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
